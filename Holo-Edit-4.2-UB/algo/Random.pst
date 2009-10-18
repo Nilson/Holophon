@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<algo name="random">
+	<preset name="#current" algo="random" params="0#1#20.0#0.1#40.0#20.0#false"/>
+	<preset name="default" algo="random" params="0#1#20.0#0.1#40.0#20.0#false"/>
+</algo>

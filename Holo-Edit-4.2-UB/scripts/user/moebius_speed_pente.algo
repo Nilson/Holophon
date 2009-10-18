@@ -1,0 +1,60 @@
+import holoedit.data.*;
+import holoedit.functions.*;
+import holoedit.gui.*;
+import holoedit.util.*;
+import holoedit.data.*;
+import java.lang.Math;
+import java.util.*;
+import static holoedit.functions.ScriptEditorFunctions.*;
+
+int dateBegin = getBeginDate();
+double dur = getDuration();
+
+FieldIndex = 0;// champs de la SDIFdata
+
+double durPoint = 5; // 1/100e sec
+int nbPoints = (int) (dur / durPoint);
+
+HoloTraj ht = new HoloTraj();
+HoloPoint curPt = new HoloPoint();
+float ox = 1 ,oy = 1;
+float a = 1.4, b = 0.3;
+
+
+float freq = 0.4, freqspeed=0.8;
+float phi = 0 ,phispeed = 0;
+float lfo, lfoamp=1.5;
+float k = 2;
+float tamp = 1;
+float tampz = tamp * 2;
+float crad = 2; // rayon du cercle
+
+for (int n = 0; n < nbPoints; n++) {
+	curPt = new HoloPoint();
+	curTimePoint = n * durPoint;
+	curPt.date = (int) curTimePoint + dateBegin;
+
+	//phispeed += Math.PI*freqspeed * durPoint/100;
+	//lfo = Math.cos(phispeed)*lfoamp;
+
+	lfo = -Math.cos(phi)*lfoamp;
+	phi += Math.PI*(freq * Math.exp(lfo)) * durPoint/100;
+	
+	
+
+	
+	
+	curPt.x = (crad+tamp*Math.cos(phi)) * Math.cos(k*phi);
+	curPt.y = (crad+tamp*Math.cos(phi)) * Math.sin(k*phi);
+	
+	curPt.z = 1+tampz * Math.sin(phi);
+
+	
+	curPt.x *= 50;
+	curPt.y *= 50;
+	curPt.z *= 50;
+	ht.addElement(curPt);
+}
+
+Object[] toReturn = [ht, dur, dateBegin];
+return toReturn;

@@ -1,0 +1,37 @@
+// imports and declarations
+import holoedit.data.*;
+import static holoedit.functions.ScriptEditorFunctions.*;
+import static holoedit.util.Ut.*;
+
+mySDIFdata = getSDIFdata("3-francesca_04.f0.sdif - st.0 1FQ0 - begin time=0:0:52'870 - Track:2")
+
+HoloTraj trajectory = new HoloTraj();	// creates a new trajectory
+int beginDate = getBeginDate();	// sets the first date of this trajectory as the begining of the time selection
+double duration = getDuration();	// defines this trajectory's duration as the duration of the time selection
+
+double pointDuration = 2; 				// 1/100e sec
+int nbPoints = (int) (duration / pointDuration); 	// the number of points to be defined for this trajectory
+int date;
+Vector<Double> data;
+
+min = minFieldValue(mySDIFdata,3);
+max = maxFieldValue(mySDIFdata,3);
+
+// a loop to define the points of the trajectory
+for (int n = 0; n < nbPoints ; n++) {
+	HoloPoint point = new HoloPoint();	// create a new point
+	point.date = beginDate + n * pointDuration ;
+	date = point.date;
+	data = getFieldAtTime(mySDIFdata,date*10, 3)			//point settings...
+	if(data != null)
+		point.x = scale(data.get(0),min,max,-100,100) ;
+	else
+		point.x = n;
+	point.y = 20 ;
+	point.z = 0 ;
+	trajectory.addElement(point);		// adds the point to the trajectory
+}
+
+// the trajectory, its duration, and its beginDate must be returned
+Object[] toReturn = [trajectory, duration, beginDate];
+return toReturn;

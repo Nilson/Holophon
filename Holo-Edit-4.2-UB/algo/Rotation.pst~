@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<algo name="rotation">
+	<preset name="#current" algo="rotation" params="0#1#2#45.0"/>
+	<preset name="default" algo="rotation" params="0#1#2#45.0"/>
+</algo>

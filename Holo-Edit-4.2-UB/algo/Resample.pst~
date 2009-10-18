@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<algo name="resample">
+	<preset name="#current" algo="resample" params="0#1#2#20.0"/>
+	<preset name="default" algo="resample" params="0#1#2#20.0"/>
+</algo>

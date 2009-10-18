@@ -1,0 +1,62 @@
+import holoedit.data.*;
+import holoedit.functions.*;
+import holoedit.gui.*;
+import holoedit.util.*;
+import holoedit.data.*;
+import java.lang.Math;
+import java.util.*;
+import static holoedit.functions.ScriptEditorFunctions.*;
+
+int dateBegin = getBeginDate();
+double dur = getDuration();
+
+FieldIndex = 0;// champs de la SDIFdata
+
+double durPoint = 2; // 1/100e sec
+int nbPoints = (int) (dur / durPoint);
+
+HoloTraj ht = new HoloTraj();
+HoloPoint curPt = new HoloPoint();
+float ox = 1 ,oy = 1;
+float a = 1.4, b = 0.3;
+
+
+float freq = 0.4, freqspeed=0.8,freqscale= 0.05; // les freq
+float phi = 0 ,phispeed = 0,phiscale = 0; /// les phases
+float lfo, lfoamp=1.5; // pour oscil vitesse
+float scale,scaleamp=2; // pour oscil proportion 
+float k = 2;     // rapport freq oscil autour / sur lui même
+float tamp = 1;   // [-1 1] quel bord de la bande
+float tampz = tamp * 2;  // oscil en Z est plus grande
+float crad = 2; // rayon du cercle
+
+for (int n = 0; n < nbPoints; n++) {
+	curPt = new HoloPoint();
+	curTimePoint = n * durPoint;
+	curPt.date = (int) curTimePoint + dateBegin;
+
+	//phispeed += Math.PI*freqspeed * durPoint/100;
+	//lfo = Math.cos(phispeed)*lfoamp;
+
+	phiscale += Math.PI*freqscale * durPoint/100;
+	scale = Math.cos(phiscale)*scaleamp;
+
+	lfo = -Math.cos(phi)*lfoamp;
+	phi += Math.PI*(freq * Math.exp(-scale)) * durPoint/100;
+	
+	curPt.x = (crad+tamp*Math.cos(phi)) * Math.cos(k*phi);
+	curPt.y = (crad+tamp*Math.cos(phi)) * Math.sin(k*phi);
+	
+	curPt.z = (scaleamp+scale) * Math.sin(phi)/2;
+	
+	//phiscale += Math.PI*freqscale * durPoint/100;
+	//scale = Math.cos(phiscale)*scaleamp;
+	
+	curPt.x *= 30*Math.exp(scale);
+	curPt.y *= 30*Math.exp(scale);
+	curPt.z *= 30;
+	ht.addElement(curPt);
+}
+
+Object[] toReturn = [ht, dur, dateBegin];
+return toReturn;

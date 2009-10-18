@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<settings version="4.2">
+	<options maxRecentFiles="10" allTrackActive="false" viewOnlyEditablePoints="true" viewSpeakers="true" openLastOnLoad="false" drawPtsNb="10" coordinates="0" laf="1" shortView="false" focus="room" scrollspeed="100.0" smooth="true" sdifExpert="false" lastScriptFile=""/>
+	<osc portIn="13005" portOut="13008" address="localhost" open="false" keyIn="/holoedit" keyOut="/holospat"/>
+	<holo dir=""/>
+	<midi dir=""/>
+	<midi7 dir=""/>
+	<txt dir=""/>
+	<seq dir=""/>
+	<snd dir=""/>
+	<dt dir=""/>
+	<script dir="/Users/charles/Documents/_GMEM/_dev/__java/HoloEdit_squelette/Holo-Edit-4.2/scripts/"/>
+	<tk dir=""/>
+	<tj dir=""/>
+	<label num="0" name="Track 1" color="-65536"/>
+	<label num="1" name="Track 2" color="-16776961"/>
+	<label num="2" name="Track 3" color="-16711936"/>
+	<label num="3" name="Track 4" color="-8619008"/>
+	<label num="4" name="Track 5" color="-8628907"/>
+	<label num="5" name="Track 6" color="-14336"/>
+	<label num="6" name="Track 7" color="-16745348"/>
+	<label num="7" name="Track 8" color="-16777216"/>
+	<speaker num="1" x="-15.307336" y="36.95518" z="0.0" d="-2.7488935"/>
+	<speaker num="3" x="-36.95518" y="15.30734" z="0.0" d="-1.9634955"/>
+	<speaker num="5" x="-36.955177" y="-15.307346" z="0.0" d="-1.178097"/>
+	<speaker num="7" x="-15.307343" y="-36.955177" z="0.0" d="-0.39269924"/>
+	<speaker num="2" x="15.307337" y="36.95518" z="0.0" d="2.7488935"/>
+	<speaker num="4" x="36.95518" y="15.307338" z="0.0" d="1.9634954"/>
+	<speaker num="6" x="36.95518" y="-15.307338" z="0.0" d="1.1780972"/>
+	<speaker num="8" x="15.307337" y="-36.95518" z="0.0" d="0.39269906"/>
+	<trackselector x="213" y="139" w="178" h="277" v="true"/>
+	<transport x="178" y="424" w="241" h="345" v="true"/>
+	<soundpool  split="220" x="370" y="250" w="700" h="400" v="false"/>
+	<score x="642" y="208" w="794" h="643" v="false"/>
+	<room viewProj="-50.0 50.0 -50.0 50.0" x="430" y="129" w="580" h="641" v="true"/>
+	<room3d view3D="-50.0 0.0 30.0 0.0 -10.0 -150.0" x="1020" y="446" w="309" h="325" v="false"/>
+	<time mode="0" curves="0 1 2 5 6" x="430" y="129" w="794" h="643" v="false"/>
+</settings>

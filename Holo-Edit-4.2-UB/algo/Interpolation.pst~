@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<algo name="interpolation">
+	<preset name="#current" algo="interpolation" params="1#2#3#100.0#0.0#100.0#0.0#100.0#0.0"/>
+	<preset name="default" algo="interpolation" params="1#2#3#100.0#0.0#100.0#0.0#100.0#0.0"/>
+</algo>

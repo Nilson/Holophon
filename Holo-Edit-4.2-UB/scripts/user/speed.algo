@@ -1,0 +1,14 @@
+// imports and declarations
+import holoedit.data.*;
+import static holoedit.functions.ScriptEditorFunctions.*;
+
+HoloPoint point;
+
+// going through the trajectory in the time selection
+for (int i = 0; i < gp[0].copyTrack.size(); i++) {
+	point = gp[0].copyTrack.elementAt(i); 	// takes a point...
+	point.date = ... 			// ... and modifies its settings
+	point.x = -point.x
+	point.y = point.z
+	point.z = 0
+}

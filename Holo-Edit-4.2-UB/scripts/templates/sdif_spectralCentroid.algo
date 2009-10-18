@@ -1,0 +1,60 @@
+// Génération en fonction du spectroide central
+// à partir d'un SDIF-1TRC
+
+import holoedit.data.*
+import static holoedit.functions.ScriptEditorFunctions.*
+
+// récupération d'une holoSDIFdata présente dans le score
+
+
+mySDIFdata = getSDIFdata("bubbles0_m.trc.sdif - st.0 1TRC - begin time=0:2:47'940 - Track:0")
+
+int beginDate = getBeginDate()	// date de début de la sélection dans le score
+double duration = getDuration()	// durée de la sélection dans le score
+
+// numéros des colonnes (fields) des matrices TRC contenant les fréquences et les amplitudes
+freqIndex = 1
+ampIndex = 2
+
+// un tableau dynamique pour contenir les valeurs moyennes à chaque temps
+ArrayList<Double> centroidValues = new ArrayList<Double>()
+
+int timesCount = getTimesCount(mySDIFdata)
+for (int i=0; i<timesCount ; i++) {
+	time = getTimes(mySDIFdata)[i]
+	sommeAmp = 0
+	double centroid  = 0
+	// moyenne des amplitudes pour chaque temps :
+	int size = howManyDataAtTime(mySDIFdata, time)
+
+	for (int partial=0; partial <  size; partial ++){
+		freq = getAllDataAtTime(mySDIFdata, time).get(partial).get(freqIndex)
+		amp = getAllDataAtTime(mySDIFdata, time).get(partial).get(ampIndex)
+		centroid += freq * amp
+		sommeAmp += amp
+	}
+	if (size!=0)
+	 centroid /= sommeAmp	
+	centroidValues.add(centroid)
+}
+
+maximalCentroidValue = Collections.max(centroidValues)
+minimalCentroidValue = Collections.min(centroidValues)
+
+// création d'une trajectoire et ajout des points
+HoloTraj trajectory = new HoloTraj()
+
+for (int i=0; i< timesCount ; i++) {
+	time = getTimes(mySDIFdata)[i]
+	HoloPoint point = new HoloPoint()
+	point.date = time/10 + beginDate
+	// mise à l'echelle et mapping sur un cercle de rayon 50
+	angle = centroidValues.get(i) - minimalCentroidValue
+	angle *= 360 / maximalCentroidValue
+	point.setAD(angle, 50)
+	trajectory.addElement(point)
+}
+
+Object[] toReturn = [trajectory, duration , beginDate]
+return toReturn
+

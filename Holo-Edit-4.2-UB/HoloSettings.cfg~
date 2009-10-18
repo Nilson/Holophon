@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<settings version="4.2">
+	<options maxRecentFiles="10" allTrackActive="true" viewOnlyEditablePoints="true" viewSpeakers="true" openLastOnLoad="false" drawPtsNb="10" coordinates="0" laf="1" shortView="false" focus="room" bonjour="false" scrollspeed="100.0" smooth="true" sdifExpert="false" lastScriptFile="/Users/charles/Documents/_GMEM/_dev/__java/HoloEdit_squelette/Holo-Edit-4.2/scripts/user/algoGroovyFile.algo"/>
+	<osc portIn="13005" portOut="13008" address="char1e5.local." open="false" keyIn="/holoedit" keyOut="/holospat"/>
+	<holo dir="/Users/nilspeters/Documents/PhD/gitreps/Jamoma/UserLib/Holophon/Holo-Edit-4.2_/demo/kobol"/>
+	<midi dir=""/>
+	<midi7 dir=""/>
+	<txt dir=""/>
+	<seq dir=""/>
+	<snd dir=""/>
+	<dt dir="/Users/charles/Documents/_GMEM/_dev/__holo/__demo/"/>
+	<script dir="/Users/charles/Documents/_GMEM/_dev/__java/HoloEdit_squelette/Holo-Edit-4.2/scripts/"/>
+	<tk dir=""/>
+	<tj dir=""/>
+	<label num="0" name="Track 1" color="-65536"/>
+	<label num="1" name="Track 2" color="-16776961"/>
+	<label num="2" name="Track 3" color="-16711936"/>
+	<label num="3" name="Track 4" color="-8619008"/>
+	<label num="4" name="Track 5" color="-8628907"/>
+	<label num="5" name="Track 6" color="-14336"/>
+	<label num="6" name="Track 7" color="-16745348"/>
+	<label num="7" name="Track 8" color="-16777216"/>
+	<last dir="/Users/nilspeters/Documents/PhD/gitreps/Jamoma/UserLib/Holophon/Holo-Edit-4.2_/demo/kobol" name="kobol.holo" type="4"/>
+	<recent dir="/Users/nilspeters/Documents/PhD/gitreps/Jamoma/UserLib/Holophon/Holo-Edit-4.2_/demo/kobol" name="kobol.holo" type="4"/>
+	<recent dir="/Users/nilspeters/Documents/PhD/gitreps/Jamoma/UserLib/Holophon/Holo-Edit-4.2_/Documentations/kobol" name="kobol.holo" type="4"/>
+	<speaker num="1" x="1.3705033" y="39.976513" z="0.0" d="3.1073234"/>
+	<speaker num="2" x="0.8224081" y="39.991543" z="0.0" d="3.121031"/>
+	<speaker num="3" x="0.27415362" y="39.99906" z="0.0" d="3.1347387"/>
+	<speaker num="4" x="-0.27415714" y="39.99906" z="0.0" d="-3.1347387"/>
+	<speaker num="5" x="-0.8224116" y="39.991543" z="0.0" d="-3.1210308"/>
+	<speaker num="6" x="-1.3705068" y="39.976513" z="0.0" d="-3.1073232"/>
+	<speaker num="7" x="-1.9183539" y="39.95397" z="0.0" d="-3.0936153"/>
+	<speaker num="8" x="-2.465836" y="39.923923" z="0.0" d="-3.0799077"/>
+	<trackselector x="5" y="29" w="178" h="277" v="true"/>
+	<transport x="0" y="375" w="241" h="345" v="false"/>
+	<soundpool  split="394" x="2" y="40" w="1280" h="635" v="false"/>
+	<score x="156" y="22" w="1033" h="698" v="false"/>
+	<room viewProj="-170.64369 178.72327 -187.00444 162.36252" x="518" y="31" w="701" h="747" v="false"/>
+	<room3d view3D="-43.100956 0.0 9.652999 0.0 -10.0 -677.8626" x="784" y="30" w="634" h="567" v="false"/>
+	<time mode="0" curves="0 1 2 5 6" x="260" y="171" w="794" h="623" v="false"/>
+</settings>

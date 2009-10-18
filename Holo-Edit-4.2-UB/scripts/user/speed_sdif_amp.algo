@@ -1,0 +1,62 @@
+// imports and declarations
+import holoedit.data.*;
+import static holoedit.functions.ScriptEditorFunctions.*;
+import static java.lang.Math.*;
+
+f0data = getSDIFdata("1-francesca_05.f0.sdif - st.0 1FQ0 - begin time=0:0:32'290 - Track:0")
+
+float min = minFieldValue(f0data,3);
+float max = maxFieldValue(f0data,3);
+float mean = meanFieldValue(f0data,3);
+
+float range = max - min;
+
+
+HoloPoint inpoint;
+HoloTraj trajectory = new HoloTraj();	// creates a new trajectory
+
+// going through the trajectory in the time selection
+int trajectorySize = getTrajectorySize();
+
+int beginDate = getBeginDate();	// sets the first date of this trajectory as the begining of the time selection
+double duration = getDuration();	// defines this trajectory's duration as the duration of the time selection
+int endDate = getEndDate();
+
+int resolution = 5
+
+
+float varamp = 10;
+float datePointer = beginDate;
+float dateinc;
+
+for (int t = beginDate ; t < endDate ; t += resolution) {
+	
+	data = getFieldAtTime(f0data,t*10,3);
+	if(data != null )
+	{
+		dateinc = exp(varamp*((data.get(0)-mean)/range));
+		z = 100* (data.get(0)-mean)/range;
+		//post("data "+data.get(0))
+	}
+	else
+	{
+		dateinc = 1;
+		z = 0;
+	}
+	datePointer += resolution*dateinc;
+	inpoint = getTrajectoryPointTimePol((float)datePointer);	// takes a point...
+	//post(" "+t);
+	if(inpoint != null){
+	HoloPoint point = new HoloPoint();	// create a new point
+	point.date = t;			// ... and modifies its settings
+	point.x = inpoint.x
+	point.y = inpoint.y
+	point.z = z
+	
+	trajectory.addElement(point);
+	}
+}
+
+// the trajectory, its duration, and its beginDate must be returned
+Object[] toReturn = [trajectory, duration, beginDate];
+return toReturn;
