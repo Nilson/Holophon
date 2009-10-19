@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
-<algo name="proportion">
-	<preset name="#current" algo="proportion" params="0#1#2#20.0#20.0#20.0"/>
-	<preset name="default" algo="proportion" params="0#1#2#20.0#20.0#20.0"/>
-</algo>

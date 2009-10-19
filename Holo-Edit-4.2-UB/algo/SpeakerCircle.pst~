@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
-<algo name="speaker_circle">
-	<preset name="#current" algo="speaker_circle" params="8#40.0#112.5#0.0#0#false"/>
-	<preset name="default" algo="speaker_circle" params="8#40.0#112.5#0.0#0#false"/>
-</algo>

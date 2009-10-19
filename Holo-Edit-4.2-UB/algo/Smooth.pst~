@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
-<algo name="smooth">
-	<preset name="#current" algo="smooth" params="0#1#2#1.0#20.0"/>
-	<preset name="default" algo="smooth" params="0#1#2#1.0#20.0"/>
-</algo>

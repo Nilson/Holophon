@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
-<algo name="timeshift">
-	<preset name="#current" algo="timeshift" params="0#1#2#0#0#0"/>
-</algo>

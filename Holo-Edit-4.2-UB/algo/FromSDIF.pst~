@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
-<algo name="fromSDIF">
-	<preset name="#current" algo="fromSDIF" params="0#1#20.0#0.1#0.0#360.0#0#0#0#0#0#0"/>
-	<preset name="default" algo="fromSDIF" params="0#1#20.0#0.1#0#0#0#0#0#0"/>
-</algo>

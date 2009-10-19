@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
-<algo name="example">
-	<preset name="#current" algo="example" params="0#1#2#25#25.0#25.0#25.0#testing...#false#Choose"/>
-</algo>
