@@ -1,0 +1,23 @@
+import holoedit.data.*;
+import holoedit.functions.*;
+import holoedit.gui.*;
+import holoedit.util.*;
+import holoedit.data.*;
+import java.lang.Math;
+import java.util.*;
+import static holoedit.functions.ScriptEditorFunctions.*;
+
+HoloPoint curPt;
+for (int i = 0; i < gp.copyTrack.size(); i++)
+{
+	curPt = gp.copyTrack.elementAt(i);
+	// Symetrie centrale
+	curPt.x = -curPt.x;
+	curPt.y = -curPt.y;
+	
+	// Symetrie horizontale
+	curPt.y = -curPt.y;
+	
+	// Symetrie verticale
+	curPt.x = -curPt.x;
+}

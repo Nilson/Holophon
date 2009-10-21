@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<algo name="symmetry">
+	<preset name="#current" algo="symmetry" params="0#1#2#0"/>
+	<preset name="default" algo="symmetry" params="0#1#2#0"/>
+</algo>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<algo name="timereverse">
+	<preset name="#current" algo="timereverse" params="0#1#2"/>
+	<preset name="default" algo="timereverse" params="0#1#2"/>
+</algo>

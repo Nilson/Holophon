@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<settings version="4.5">
+	<options maxRecentFiles="10" allTrackActive="true" viewOnlyEditablePoints="true" viewSpeakers="true" openLastOnLoad="false" drawPtsNb="10" coordinates="0" laf="1" shortView="false" focus="room" bonjour="false" scrollspeed="100.0" smooth="true" sdifExpert="false" lastScriptFile="/Users/charles/Documents/_GMEM/_dev/__holo/_pack/Holo-Edit-4.5?-OSX/scripts/user/algoGroovyFile.algo"/>
+	<osc portIn="13005" portOut="13008" address="localhost" open="true" keyIn="/holoedit" keyOut="/holospat" linemode="true"/>
+	<holo dir="/Users/charles/Desktop/_test/"/>
+	<midi dir=""/>
+	<midi7 dir=""/>
+	<txt dir=""/>
+	<seq dir=""/>
+	<snd dir=""/>
+	<dt dir="/Users/charles/Documents/_GMEM/_dev/__java/workspace/holo-edit-dev/Documentations/kobol/"/>
+	<script dir="/Users/charles/Documents/_GMEM/_dev/__java/workspace/holo-edit-dev/scripts/"/>
+	<tk dir=""/>
+	<tj dir=""/>
+	<label num="0" name="Track 1" color="-65536"/>
+	<label num="1" name="Track 2" color="-16776961"/>
+	<label num="2" name="Track 3" color="-16711936"/>
+	<label num="3" name="Track 4" color="-8619008"/>
+	<label num="4" name="Track 5" color="-8628907"/>
+	<label num="5" name="Track 6" color="-14336"/>
+	<label num="6" name="Track 7" color="-16745348"/>
+	<label num="7" name="Track 8" color="-16777216"/>
+	<last dir="/Users/charles/Desktop/_test/" name="tesT4.holo" type="4"/>
+	<recent dir="/Users/charles/Desktop/_test/" name="tesT4.holo" type="4"/>
+	<recent dir="/Users/charles/Documents/_GMEM/_dev/__holo/__demo/" name="demo_cordes+sdif.holo" type="4"/>
+	<recent dir="/Users/charles/Documents/_GMEM/_dev/__holo/__demo/" name="demo_cordes+sdif+4.5.holo" type="4"/>
+	<recent dir="/Users/charles/Desktop/_test/" name="test_brown.holo" type="4"/>
+	<recent dir="/Users/charles/Desktop/_test/" name="test2.holo" type="4"/>
+	<recent dir="/Users/charles/Desktop/_test/" name="test.holo" type="4"/>
+	<recent dir="/Users/charles/Desktop/_test/" name="bla.holo" type="4"/>
+	<recent dir="/Users/charles/Documents/_GMEM/_dev/__holo/__demo/" name="demo_cordes+sdif+.holo" type="4"/>
+	<recent dir="/Users/charles/Documents/holo/" name="_Saotest.holo" type="4"/>
+	<speaker num="1" x="-15.307343" y="36.955177" z="0.0" d="-2.7488935"/>
+	<speaker num="2" x="15.3073435" y="36.955177" z="0.0" d="2.7488935"/>
+	<speaker num="3" x="36.95519" y="15.307319" z="0.0" d="1.9634949"/>
+	<speaker num="4" x="36.955185" y="-15.307332" z="0.0" d="1.1780974"/>
+	<speaker num="5" x="15.307331" y="-36.955185" z="0.0" d="0.3926989"/>
+	<speaker num="6" x="-15.307356" y="-36.955173" z="0.0" d="-0.3926996"/>
+	<speaker num="7" x="-36.955193" y="-15.307307" z="0.0" d="-1.1780981"/>
+	<speaker num="8" x="-36.955177" y="15.307344" z="0.0" d="-1.9634956"/>
+	<trackselector x="8" y="24" w="193" h="357" v="true"/>
+	<transport x="8" y="385" w="241" h="368" v="true"/>
+	<soundpool  split="309" x="13" y="62" w="1250" h="612" v="false"/>
+	<score x="89" y="180" w="1209" h="640" v="false"/>
+	<room viewProj="-151.0076 141.7757 -146.66861 146.11469" x="486" y="57" w="641" h="687" v="true"/>
+	<room3d view3D="-47.46033 0.0 0.0 0.0 -10.0 -346.07986" x="258" y="165" w="629" h="589" v="true"/>
+	<time mode="0" curves="0 1 2 3 6 5" x="257" y="94" w="825" h="733" v="false"/>
+</settings>

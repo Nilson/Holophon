@@ -1,0 +1,58 @@
+import holoedit.data.*;
+import holoedit.functions.*;
+import holoedit.gui.*;
+import holoedit.util.*;
+import holoedit.data.*;
+import java.lang.Math;
+import java.util.*;
+import static holoedit.functions.ScriptEditorFunctions.*;
+
+int dateBegin = getBeginDate(gp);
+double dur = getDuration(gp);
+
+FieldIndex = 0;// champs de la SDIFdata
+
+double durPoint = 1; // 1/100e sec
+int nbPoints = (int) (dur / durPoint);
+
+HoloTraj ht = new HoloTraj();
+HoloPoint curPt = new HoloPoint();
+float ox = 0 ,oy = 0;
+float a = 0.25 , b = 0.3,c=1;
+
+
+float freq = 0.1;
+float phi;
+float k =3.5;
+float t = 0,dt = 0.1;
+
+for (int n = 0; n < nbPoints; n++) {
+	curPt = new HoloPoint();
+	curTimePoint = n * durPoint;
+	curPt.date = (int) curTimePoint + dateBegin;
+	phi = Math.PI*freq * curTimePoint/100;
+	
+	curPt.x = oy;
+	curPt.y = ox - Math.pow(ox,3) - a * oy + b * Math.cos(c * t);
+	
+	ox = curPt.x ;
+	oy = curPt.y ;
+	
+t+= dt;
+	curPt.x = oy;
+	curPt.y = ox - Math.pow(ox,3) - a * oy + b * Math.cos(c * t);
+
+	curPt.z = 0;
+
+
+	ox = curPt.x ;
+	oy = curPt.y ;
+	curPt.x *= 50;
+	curPt.y *= 50;
+	curPt.z *= 0;
+	ht.addElement(curPt);
+	t+= dt;
+}
+
+Object[] toReturn = [ht, dur, dateBegin];
+return toReturn;

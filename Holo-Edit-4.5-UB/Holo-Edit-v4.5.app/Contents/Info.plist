@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<string>true</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>French</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>holo</string>
+				<string>holo~</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Holo-Edit Session</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>tk</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Holo-Edit Track</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>tj</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Holo-Edit Trajectory</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>JavaApplicationStub</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Holo-Edit v4.5 - Conception Laurent Pottier/Leopold Frey - Gmem - Marseille - France</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>com.gmem.holophon.holoedit</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Holo-Edit 4.5ß</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>4.5</string>
+	<key>CFBundleSignature</key>
+	<string>Holo</string>
+	<key>CFBundleVersion</key>
+	<string>4.5</string>
+	<key>Java</key>
+	<dict>
+		<key>ClassPath</key>
+		<array>
+			<string></string>
+			<string>$JAVAROOT/sdif.jar</string>
+			<string>$JAVAROOT/max.jar</string>
+			<string>$JAVAROOT/holoedit.jar</string>
+			<string>$JAVAROOT/javaosc.jar</string>
+			<string>$JAVAROOT/jogl.jar</string>
+			<string>$JAVAROOT/groovy-all-1.5.1.jar</string>
+		</array>
+		<key>JVMVersion</key>
+		<string>1.5+</string>
+		<key>MainClass</key>
+		<string>holoedit.Main</string>
+		<key>Properties</key>
+		<dict>
+			<key>apple.laf.useScreenMenuBar</key>
+			<string>true</string>
+		</dict>
+		<key>VMOptions</key>
+		<string>-Xms100m -Xmx250m</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<algo name="acceleration">
+	<preset name="#current" algo="acceleration" params="0#1#2#30.0"/>
+	<preset name="default" algo="acceleration" params="0#1#2#30.0"/>
+</algo>

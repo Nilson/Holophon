@@ -1,0 +1,28 @@
+import holoedit.data.*;
+import holoedit.functions.*;
+import holoedit.gui.*;
+import holoedit.util.*;
+import holoedit.data.*;
+import java.lang.Math;
+import java.util.*;
+import static holoedit.functions.ScriptEditorFunctions.*;
+
+HoloPoint curPt;
+float mod;
+float phi;
+float freq = 10;
+float t;
+
+float odate, ox = 0 , oy = 0, oz = 0;
+float speed;
+for (int i = 0; i < gp[0].copyTrack.size(); i++)
+{
+	curPt = gp[0].copyTrack.elementAt(i);
+	t = curPt.date; 
+ 	
+	speed = Math.sqrt( Math.pow(( curPt.x - ox ),2) + Math.pow(( curPt.y - oy ),2) + Math.pow(( curPt.z - oz ),2)) / (curPt.date - odate);
+	
+	phi = freq * speed * t / 100; 
+	mod = 100 - curPt.z;
+	curPt.z = curPt.z + (mod/2) * ( 1 + Math.cos(phi));
+}

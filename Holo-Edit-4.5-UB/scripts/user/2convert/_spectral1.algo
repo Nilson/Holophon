@@ -1,0 +1,57 @@
+import holoedit.data.*;
+import holoedit.functions.*;
+import holoedit.gui.*;
+import holoedit.util.*;
+import holoedit.data.*;
+import java.lang.Math;
+import java.util.*;
+import static holoedit.functions.ScriptEditorFunctions.*;
+
+
+mySDIFdata = getSDIFdata(gp, "seachorre_1.trc.sdif - 1TRC - begin time=0:0:0'020 - Track:0")
+timeCount = getTimesCount(mySDIFdata)
+
+
+int dateBegin = getBeginDate(gp) ; // = the begining of the score selection
+int dateEnd = getEndDate(gp) ; // = the end date of the score selection
+double dur = getDuration(gp) ; // = the length of the score selection
+
+FieldIndex = 0;// champs de la SDIFdata
+
+double durPoint = 0.01 * 100; // 1/100e sec
+int nbPoints = (int) (dur / durPoint);
+
+HoloTraj ht = new HoloTraj();
+HoloPoint curPt = new HoloPoint();
+TreeMap<Double, Double> meanMap = new TreeMap<Double, Double>();
+
+Double value = 0d;
+if (!mySDIFdata.sdifTreeMap.isEmpty())
+{
+for (Double key : mySDIFdata.sdifTreeMap.keySet()) {
+double mean =0;
+System.out.println("size="+mySDIFdata.sdifTreeMap.get(key).size());
+for (int s=0; s<mySDIFdata.sdifTreeMap.get(key).size(); s++) {
+mean+=mySDIFdata.sdifTreeMap.get(key).get(s).get(1)*mySDIFdata.sdifTreeMap.get(key).get(s).get(2);
+}
+mean/=mySDIFdata.sdifTreeMap.get(key).size();
+meanMap.put(key, mean);
+}
+}
+
+for (Double key : meanMap.keySet()) { // DO NOT REMOVE THIS LINE
+
+curPt = new HoloPoint(); // DO NOT REMOVE THIS LINE
+
+curTimePoint = key/10;
+
+curPt.date = (int) curTimePoint + dateBegin;
+
+curPt.setAD((Math.pow(meanMap.get(key)/40,0.25) * 360 )% 360 ,40);
+
+
+ht.addElement(curPt);
+}
+
+Object[] toReturn = [ht, dur, dateBegin];
+return toReturn;

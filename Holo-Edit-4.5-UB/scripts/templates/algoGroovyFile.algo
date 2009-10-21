@@ -1,0 +1,14 @@
+// imports and declarations
+import holoedit.data.*;
+import static holoedit.functions.ScriptEditorFunctions.*;
+
+HoloPoint point;
+float d;
+// going through the trajectory in the time selection
+int trajectorySize = getTrajectorySize();
+
+for (int pointIndex = 0 ; pointIndex < trajectorySize ; pointIndex++) {
+	point = getTrajectoryPoint(pointIndex);	// takes a point...
+	d = point.getRay();
+	point.setRay((float)(Math.random()*d));
+}

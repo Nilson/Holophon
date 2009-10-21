@@ -1,0 +1,45 @@
+import holoedit.data.*;
+import holoedit.functions.*;
+import holoedit.gui.*;
+import holoedit.util.*;
+import holoedit.data.*;
+import static java.lang.Math.*;
+import java.util.*;
+import static algo.GroovyEditorFunctions.*;
+
+int dateBegin = getBeginDate(gp);
+double dur = getDuration(gp);
+
+FieldIndex = 0;// champs de la SDIFdata
+
+double durPoint = 0.1 * 100; // 1/100e sec
+int nbPoints = (int) (dur / durPoint);
+
+HoloTraj ht = new HoloTraj();
+HoloPoint curPt = new HoloPoint();
+float ox = 1 ,oy = 1,oz=1;
+float a = 1.4, b = 0.3;
+float A=0.754, B=2.571, C=-0.943, D=1.834;
+
+for (int n = 0; n < nbPoints; n++) {
+curPt = new HoloPoint();
+curTimePoint = n * durPoint;
+curPt.date = (int) curTimePoint + dateBegin;
+
+curPt.x = sin(A*oy) - oz * cos(B*ox);
+curPt.y = oz * sin(C*ox) - cos(D*oy);
+curPt.z = sin(ox);
+
+ox = curPt.x;
+oy = curPt.y;
+oz = curPt.z;
+
+curPt.x *= 1;
+curPt.y *= 1;
+curPt.z *= 1;
+
+ht.addElement(curPt);
+}
+
+Object[] toReturn = [ht, dur, dateBegin];
+return toReturn;

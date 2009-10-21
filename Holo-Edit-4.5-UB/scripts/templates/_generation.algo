@@ -1,0 +1,9 @@
+// imports and declarationsimport holoedit.data.*;
+import static holoedit.functions.ScriptEditorFunctions.*;
+HoloTraj trajectory = new HoloTraj();	// creates a new trajectoryint beginDate = getBeginDate(gp);	// sets the first date of this trajectory as the begining of the time selectiondouble duration = getDuration(gp);	// defines this trajectory's duration as the duration of the time selection
+
+double pointDuration = 1; 				// 1/100e sec
+int nbPoints = (int) (duration / pointDuration); 	// the number of points to be defined for this trajectory
+
+// a loop to define the points of the trajectoryfor (int n = 0; n < nbPoints ; n++) {	HoloPoint point = new HoloPoint();	// create a new point	point.date = ... 			//point settings...	point.x = ...	point.y = ...	point.z = ...	trajectory.addElement(point);		// adds the point to the trajectory}
+// the trajectory, its duration, and its beginDate must be returnedObject[] toReturn = [trajectory, duration, beginDate];return toReturn;

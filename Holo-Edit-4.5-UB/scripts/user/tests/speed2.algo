@@ -1,0 +1,44 @@
+// imports and declarations
+import holoedit.data.*;
+import static holoedit.functions.ScriptEditorFunctions.*;
+import static java.lang.Math.*;
+
+HoloPoint inpoint;
+HoloTraj trajectory = new HoloTraj();	// creates a new trajectory
+
+// going through the trajectory in the time selection
+int trajectorySize = getTrajectorySize();
+
+int beginDate = getBeginDate();	// sets the first date of this trajectory as the begining of the time selection
+double duration = getDuration();	// defines this trajectory's duration as the duration of the time selection
+int endDate = getEndDate();
+
+int resolution = 5
+
+float lfophi = 0;
+float lfofreq = 1;
+float lfoamp = 2;
+float lfoinc = PI * resolution * lfofreq/100 ;
+float datePointer = beginDate;
+
+for (int t = beginDate ; t < endDate ; t += resolution) {
+	
+	lfophi += lfoinc;
+	
+	datePointer += resolution*(1 + sin(lfophi));
+	inpoint = getTrajectoryPointTime(datePointer);	// takes a point...
+	//post(" "+t);
+	if(inpoint != null){
+	HoloPoint point = new HoloPoint();	// create a new point
+	point.date = t;			// ... and modifies its settings
+	point.x = inpoint.x
+	point.y = inpoint.y
+	point.z = inpoint.z
+	
+	trajectory.addElement(point);
+	}
+}
+
+// the trajectory, its duration, and its beginDate must be returned
+Object[] toReturn = [trajectory, duration, beginDate];
+return toReturn;

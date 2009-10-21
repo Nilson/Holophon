@@ -1,0 +1,32 @@
+// Génération en fonction de l’enveloppe temporelle
+// à partir d'un SDIF-1TRC
+
+import holoedit.data.*;
+import static holoedit.functions.ScriptEditorFunctions.*;
+
+f0data = getSDIFdata("1-francesca_05.f0__.sdif - st.0 1FQ0 - begin time=0:0:3'100 - Track:0")
+int dateBegin = 310; // = the begining of the score selection
+int dateEnd = 29565; // = the end date of the score selection
+double dur = 29255; // = the length of the score selection
+
+float min = minFieldValue(f0data,0);
+float max = maxFieldValue(f0data,0);
+float mean = meanFieldValue(f0data,0);
+
+float range = max - min;
+
+float delta = getTimes(f0data)[0];
+
+HoloPoint point;
+int date;
+
+float minspeed = 1;
+float maxspeed = 1;
+
+// going through the trajectory in the time selection
+for (int i = 0; i < gp.copyTrack.size(); i++) {
+
+	point = gp.copyTrack.elementAt(i); 	// takes a point...
+	point.date = point.date * 2;
+		
+}
