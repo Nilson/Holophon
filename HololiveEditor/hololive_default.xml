@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+
+<pattrstorage name = "hololive_storage">
+	<slot number = "1" name = "des ronds">
+		<pattr name = "op_list" value = "add brown 817. 42. 100. 1, mult circle 376 0.45 0, add brown 344. 55. 59. 1, mult constant 0.5 0.5 0.5, add constant 50. 50. 50." />
+	</slot>
+	<slot number = "2" name = "indecis">
+		<pattr name = "op_list" value = "add brown 817. 10. 100. 1, mult circle 376 0.13 0, add brown 344. 55. 59. 1" />
+	</slot>
+	<slot number = "3" name = "sauts+agitations">
+		<pattr name = "op_list" value = "add brown 15. 10. 10. 0, add brown 344. 88. 100. 0" />
+	</slot>
+	<slot number = "4" name = "carre mou">
+		<pattr name = "op_list" value = "add brown 817. 42. 100. 1, mult circle 376 0.45 0, add circle 1000 50. 0" />
+	</slot>
+	<slot number = "5" name = "cercle lent">
+		<pattr name = "op_list" value = "add circle 10000 100. 0" />
+	</slot>
+	<slot number = "6" name = "avant arriere">
+		<pattr name = "op_list" value = "add lissajou 10000. 2480. 2400. 71. 200. 0." />
+	</slot>
+</pattrstorage>
+
