@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+
+<pattrstorage name = "env_test">
+	<slot number = "1">
+		<pattr name = "op_list[1]" value = "replace hanning, mult rand 393. 1.23 0." />
+	</slot>
+	<slot number = "2">
+		<pattr name = "op_list[1]" value = "replace expodecay 4., mult sin 28. 0." />
+	</slot>
+	<slot number = "7">
+		<pattr name = "op_list[1]" value = "replace sin 50. 0., mult expodecay 5." />
+	</slot>
+	<slot number = "8">
+		<pattr name = "op_list[1]" value = "replace hanning, mult sin 14. 0., mult repeat 1. 9. 1.68" />
+	</slot>
+	<slot number = "9">
+		<pattr name = "op_list[1]" value = "replace sin 50. 0., add sin 1. 0., mult expodecay 5." />
+	</slot>
+	<slot number = "10">
+		<pattr name = "op_list[1]" value = "replace sin 50. 0., add sin 75. 0., mult expodecay 5." />
+	</slot>
+	<slot number = "13">
+		<pattr name = "op_list[1]" value = "replace gauss 0.44, replace repeat 1. 17. -0.68, mult expodecay 3., replace flipY 0.5, replace repeat 1. 5. 1." />
+	</slot>
+	<slot number = "19">
+		<pattr name = "op_list[1]" value = "replace sin 50. 0., add sin 1. 0., mult expodecay 5., mult bpf 0. 0. 1. 0.028302 0. 0.186321 1. 0.408019 0. 0.412736 0. 1." />
+	</slot>
+	<slot number = "20">
+		<pattr name = "op_list[1]" value = "replace sin 50. 0., add sin 6. 0., mult bpf 0. 0. 0.516129 0.106132 0. 1." />
+	</slot>
+	<slot number = "25">
+		<pattr name = "op_list[1]" value = "replace bpf 0. 0. 0.516129 0.106132 1. 0.549528 0. 1." />
+	</slot>
+	<slot number = "26">
+		<pattr name = "op_list[1]" value = "replace bpf 0. 0. 1. 0.004717 0.129032 0.058962 0.419355 0.351415 0. 1., replace pow 2.43, mult sin 200. 0." />
+	</slot>
+	<slot number = "31">
+		<pattr name = "op_list[1]" value = "replace gauss 0.2, replace repeat 2.23 0.56 1., mult constant 3., add gauss 0.5, mult constant 0.29" />
+	</slot>
+	<slot number = "32">
+		<pattr name = "op_list[1]" value = "replace gauss 0.2, replace repeat 4.48 0.56 1., mult constant 3., add gauss 0.6, mult constant 0.29, replace repeat 11. 11. 1." />
+	</slot>
+</pattrstorage>
+
