@@ -16,6 +16,9 @@
 		"toolbarvisible" : 1,
 		"boxanimatetime" : 200,
 		"imprint" : 0,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"bgoncolor" : [ 1.0, 0.0, 0.0, 1.0 ],
@@ -60,9 +63,9 @@
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
-						"rect" : [ 50.0, 94.0, 734.0, 533.0 ],
+						"rect" : [ 50.0, 94.0, 1057.0, 539.0 ],
 						"bglocked" : 0,
-						"defrect" : [ 50.0, 94.0, 734.0, 533.0 ],
+						"defrect" : [ 50.0, 94.0, 1057.0, 539.0 ],
 						"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -74,6 +77,9 @@
 						"toolbarvisible" : 1,
 						"boxanimatetime" : 200,
 						"imprint" : 0,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Verdana",
@@ -83,8 +89,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 127.0, 188.0, 519.0, 19.0 ],
-									"text" : "jcom.message recorder/1/in @repetitions/allow 1 @type array @description \"x y z input position.\"",
+									"patching_rect" : [ 127.0, 188.0, 906.0, 19.0 ],
+									"text" : "jcom.message recorder/1/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit/active xyz @dataspace/unit/native xyz",
 									"varname" : "hue_angle[15]"
 								}
 
@@ -98,8 +104,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 127.0, 20.0, 519.0, 19.0 ],
-									"text" : "jcom.message recorder/8/in @repetitions/allow 1 @type array @description \"x y z input position.\"",
+									"patching_rect" : [ 127.0, 20.0, 906.0, 19.0 ],
+									"text" : "jcom.message recorder/8/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit/active xyz @dataspace/unit/native xyz",
 									"varname" : "hue_angle[1]"
 								}
 
@@ -233,8 +239,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 127.0, 44.0, 519.0, 19.0 ],
-									"text" : "jcom.message recorder/7/in @repetitions/allow 1 @type array @description \"x y z input position.\"",
+									"patching_rect" : [ 127.0, 44.0, 906.0, 19.0 ],
+									"text" : "jcom.message recorder/7/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit/active xyz @dataspace/unit/native xyz",
 									"varname" : "hue_angle[9]"
 								}
 
@@ -248,8 +254,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 127.0, 68.0, 519.0, 19.0 ],
-									"text" : "jcom.message recorder/6/in @repetitions/allow 1 @type array @description \"x y z input position.\"",
+									"patching_rect" : [ 127.0, 68.0, 906.0, 19.0 ],
+									"text" : "jcom.message recorder/6/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit/active xyz @dataspace/unit/native xyz",
 									"varname" : "hue_angle[10]"
 								}
 
@@ -263,8 +269,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 127.0, 92.0, 519.0, 19.0 ],
-									"text" : "jcom.message recorder/5/in @repetitions/allow 1 @type array @description \"x y z input position.\"",
+									"patching_rect" : [ 127.0, 92.0, 906.0, 19.0 ],
+									"text" : "jcom.message recorder/5/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit/active xyz @dataspace/unit/native xyz",
 									"varname" : "hue_angle[11]"
 								}
 
@@ -278,8 +284,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 127.0, 116.0, 519.0, 19.0 ],
-									"text" : "jcom.message recorder/4/in @repetitions/allow 1 @type array @description \"x y z input position.\"",
+									"patching_rect" : [ 127.0, 116.0, 906.0, 19.0 ],
+									"text" : "jcom.message recorder/4/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit/active xyz @dataspace/unit/native xyz",
 									"varname" : "hue_angle[12]"
 								}
 
@@ -293,8 +299,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 127.0, 140.0, 519.0, 19.0 ],
-									"text" : "jcom.message recorder/3/in @repetitions/allow 1 @type array @description \"x y z input position.\"",
+									"patching_rect" : [ 127.0, 140.0, 906.0, 19.0 ],
+									"text" : "jcom.message recorder/3/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit/active xyz @dataspace/unit/native xyz",
 									"varname" : "hue_angle[13]"
 								}
 
@@ -308,8 +314,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 127.0, 164.0, 519.0, 19.0 ],
-									"text" : "jcom.message recorder/2/in @repetitions/allow 1 @type array @description \"x y z input position.\"",
+									"patching_rect" : [ 127.0, 164.0, 906.0, 19.0 ],
+									"text" : "jcom.message recorder/2/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit/active xyz @dataspace/unit/native xyz",
 									"varname" : "hue_angle[14]"
 								}
 
@@ -320,13 +326,13 @@
 ,
 					"patching_rect" : [ 465.0, 315.0, 68.0, 19.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
-						"default_fontsize" : 12.0,
-						"globalpatchername" : "",
 						"fontface" : 0,
 						"fontsize" : 12.0,
-						"default_fontface" : 0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"globalpatchername" : "",
+						"default_fontsize" : 12.0,
+						"fontname" : "Verdana"
 					}
 ,
 					"text" : "p messages"
@@ -458,8 +464,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 465.0, 54.0, 596.0, 31.0 ],
-					"text" : "jcom.parameter recorder/2/enable @repetitions/allow 0 @type integer @range/bounds 0 1 @range/clipmode both @description \"Arm record.\"",
+					"patching_rect" : [ 465.0, 54.0, 595.0, 31.0 ],
+					"text" : "jcom.parameter recorder/2/enable @repetitions/allow 0 @type boolean @range/bounds 0 1 @range/clipmode both @description \"Arm record.\"",
 					"varname" : "hue_angle[2]"
 				}
 
@@ -488,6 +494,9 @@
 						"toolbarvisible" : 1,
 						"boxanimatetime" : 200,
 						"imprint" : 0,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Verdana",
@@ -833,13 +842,13 @@
 ,
 					"patching_rect" : [ 465.0, 340.0, 36.0, 19.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
-						"default_fontsize" : 12.0,
-						"globalpatchername" : "",
 						"fontface" : 0,
 						"fontsize" : 12.0,
-						"default_fontface" : 0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"globalpatchername" : "",
+						"default_fontsize" : 12.0,
+						"fontname" : "Verdana"
 					}
 ,
 					"text" : "p doc"
@@ -876,8 +885,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 465.0, 19.0, 596.0, 31.0 ],
-					"text" : "jcom.parameter recorder/1/enable @repetitions/allow 0 @type integer @range/bounds 0 1 @range/clipmode both @description \"Arm record.\"",
+					"patching_rect" : [ 465.0, 19.0, 595.0, 31.0 ],
+					"text" : "jcom.parameter recorder/1/enable @repetitions/allow 0 @type boolean @range/bounds 0 1 @range/clipmode both @description \"Arm record.\"",
 					"varname" : "hue_angle"
 				}
 
@@ -912,8 +921,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 465.0, 122.0, 596.0, 31.0 ],
-					"text" : "jcom.parameter recorder/4/enable @repetitions/allow 0 @type integer @range/bounds 0 1 @range/clipmode both @description \"Arm record.\"",
+					"patching_rect" : [ 465.0, 122.0, 595.0, 31.0 ],
+					"text" : "jcom.parameter recorder/4/enable @repetitions/allow 0 @type boolean @range/bounds 0 1 @range/clipmode both @description \"Arm record.\"",
 					"varname" : "hue_angle[3]"
 				}
 
@@ -977,6 +986,9 @@
 						"toolbarvisible" : 1,
 						"boxanimatetime" : 200,
 						"imprint" : 0,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Verdana",
@@ -1309,13 +1321,13 @@
 ,
 					"patching_rect" : [ 45.0, 277.0, 117.0, 19.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontname" : "Verdana",
-						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
-						"globalpatchername" : "",
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"globalpatchername" : "",
+						"default_fontsize" : 10.0,
+						"fontname" : "Verdana"
 					}
 ,
 					"text" : "p jalg.holo.rescontrol"
@@ -1332,8 +1344,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 465.0, 88.0, 596.0, 31.0 ],
-					"text" : "jcom.parameter recorder/3/enable @repetitions/allow 0 @type integer @range/bounds 0 1 @range/clipmode both @description \"Arm record.\"",
+					"patching_rect" : [ 465.0, 88.0, 595.0, 31.0 ],
+					"text" : "jcom.parameter recorder/3/enable @repetitions/allow 0 @type boolean @range/bounds 0 1 @range/clipmode both @description \"Arm record.\"",
 					"varname" : "hue_angle[4]"
 				}
 
@@ -1401,7 +1413,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 165.0, 277.0, 90.0, 29.0 ],
-					"text" : "/documentation/generate 0"
+					"text" : "/view/size 300 70"
 				}
 
 			}
@@ -1449,8 +1461,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 465.0, 194.0, 596.0, 31.0 ],
-					"text" : "jcom.parameter recorder/6/enable @repetitions/allow 0 @type integer @range/bounds 0 1 @range/clipmode both @description \"Arm record.\"",
+					"patching_rect" : [ 465.0, 194.0, 595.0, 31.0 ],
+					"text" : "jcom.parameter recorder/6/enable @repetitions/allow 0 @type boolean @range/bounds 0 1 @range/clipmode both @description \"Arm record.\"",
 					"varname" : "hue_angle[5]"
 				}
 
@@ -1485,8 +1497,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 465.0, 159.0, 596.0, 31.0 ],
-					"text" : "jcom.parameter recorder/5/enable @repetitions/allow 0 @type integer @range/bounds 0 1 @range/clipmode both @description \"Arm record.\"",
+					"patching_rect" : [ 465.0, 159.0, 595.0, 31.0 ],
+					"text" : "jcom.parameter recorder/5/enable @repetitions/allow 0 @type boolean @range/bounds 0 1 @range/clipmode both @description \"Arm record.\"",
 					"varname" : "hue_angle[6]"
 				}
 
@@ -1535,8 +1547,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 465.0, 265.0, 596.0, 31.0 ],
-					"text" : "jcom.parameter recorder/8/enable @repetitions/allow 0 @type integer @range/bounds 0 1 @range/clipmode both @description \"Arm record.\"",
+					"patching_rect" : [ 465.0, 265.0, 595.0, 31.0 ],
+					"text" : "jcom.parameter recorder/8/enable @repetitions/allow 0 @type boolean @range/bounds 0 1 @range/clipmode both @description \"Arm record.\"",
 					"varname" : "hue_angle[7]"
 				}
 
@@ -1571,8 +1583,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 465.0, 230.0, 596.0, 31.0 ],
-					"text" : "jcom.parameter recorder/7/enable @repetitions/allow 0 @type integer @range/bounds 0 1 @range/clipmode both @description \"Arm record.\"",
+					"patching_rect" : [ 465.0, 230.0, 595.0, 31.0 ],
+					"text" : "jcom.parameter recorder/7/enable @repetitions/allow 0 @type boolean @range/bounds 0 1 @range/clipmode both @description \"Arm record.\"",
 					"varname" : "hue_angle[8]"
 				}
 
@@ -1855,51 +1867,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"hidden" : 0,
-					"midpoints" : [ 59.5, 133.0, 24.5, 133.0 ],
-					"source" : [ "obj-22", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"hidden" : 0,
-					"midpoints" : [ 249.5, 133.0, 24.5, 133.0 ],
-					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ],
-					"source" : [ "obj-37", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ],
-					"source" : [ "obj-38", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"hidden" : 0,
-					"midpoints" : [ 84.5, 133.0, 24.5, 133.0 ],
-					"source" : [ "obj-43", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ],
@@ -1949,6 +1916,15 @@
 					"hidden" : 0,
 					"midpoints" : [  ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"hidden" : 0,
+					"midpoints" : [ 59.5, 133.0, 24.5, 133.0 ],
+					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -2026,6 +2002,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"hidden" : 0,
+					"midpoints" : [ 249.5, 133.0, 24.5, 133.0 ],
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-71", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ],
@@ -2044,10 +2029,37 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ],
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ],
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-69", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"hidden" : 0,
+					"midpoints" : [ 84.5, 133.0, 24.5, 133.0 ],
+					"source" : [ "obj-43", 0 ]
 				}
 
 			}
