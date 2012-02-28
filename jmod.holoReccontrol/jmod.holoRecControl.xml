@@ -5,19 +5,15 @@
 		xsi:schemaLocation='http://jamoma.org/ file:jamoma.xsd'
 >
   <preset number='1' name='default'>
-    <item name='recorder/1/enable' type='integer' priority='0'>0</item>
-    <item name='recorder/2/enable' type='integer' priority='0'>0</item>
-    <item name='recorder/3/enable' type='integer' priority='0'>0</item>
-    <item name='recorder/4/enable' type='integer' priority='0'>0</item>
-    <item name='recorder/5/enable' type='integer' priority='0'>0</item>
-    <item name='recorder/6/enable' type='integer' priority='0'>0</item>
-    <item name='recorder/7/enable' type='integer' priority='0'>0</item>
-    <item name='recorder/8/enable' type='integer' priority='0'>0</item>
-    <item name='view/color/border' type='array' priority='0'>0</item>
-    <item name='view/color/contentBackground' type='array' priority='0'>0</item>
-    <item name='view/color/toolbarBackground' type='array' priority='0'>0</item>
-    <item name='view/color/toolbarText' type='array' priority='0'>0</item>
-    <item name='view/freeze' type='boolean' priority='0'>0</item>
-    <item name='view/size' type='array' priority='0'>300 70 </item>
+    <item name='recorder/1/enable' type='boolean' priority='0' mixweight='1'>0</item>
+    <item name='recorder/2/enable' type='boolean' priority='0' mixweight='1'>0</item>
+    <item name='recorder/3/enable' type='boolean' priority='0' mixweight='1'>0</item>
+    <item name='recorder/4/enable' type='boolean' priority='0' mixweight='1'>0</item>
+    <item name='recorder/5/enable' type='boolean' priority='0' mixweight='1'>0</item>
+    <item name='recorder/6/enable' type='boolean' priority='0' mixweight='1'>0</item>
+    <item name='recorder/7/enable' type='boolean' priority='0' mixweight='1'>0</item>
+    <item name='recorder/8/enable' type='boolean' priority='0' mixweight='1'>0</item>
+    <item name='view/freeze' type='boolean' priority='0' mixweight='1'>0</item>
+    <item name='view/highlight' type='string' priority='0' mixweight='1'>none</item>
   </preset>
 </jamoma>
