@@ -90,7 +90,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 127.0, 188.0, 906.0, 19.0 ],
-									"text" : "jcom.message recorder/1/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit/active xyz @dataspace/unit/native xyz",
+									"text" : "jcom.message recorder/1/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit xyz",
 									"varname" : "hue_angle[15]"
 								}
 
@@ -105,7 +105,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 127.0, 20.0, 906.0, 19.0 ],
-									"text" : "jcom.message recorder/8/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit/active xyz @dataspace/unit/native xyz",
+									"text" : "jcom.message recorder/8/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit xyz",
 									"varname" : "hue_angle[1]"
 								}
 
@@ -240,7 +240,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 127.0, 44.0, 906.0, 19.0 ],
-									"text" : "jcom.message recorder/7/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit/active xyz @dataspace/unit/native xyz",
+									"text" : "jcom.message recorder/7/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit xyz",
 									"varname" : "hue_angle[9]"
 								}
 
@@ -255,7 +255,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 127.0, 68.0, 906.0, 19.0 ],
-									"text" : "jcom.message recorder/6/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit/active xyz @dataspace/unit/native xyz",
+									"text" : "jcom.message recorder/6/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit xyz",
 									"varname" : "hue_angle[10]"
 								}
 
@@ -270,7 +270,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 127.0, 92.0, 906.0, 19.0 ],
-									"text" : "jcom.message recorder/5/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit/active xyz @dataspace/unit/native xyz",
+									"text" : "jcom.message recorder/5/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit xyz",
 									"varname" : "hue_angle[11]"
 								}
 
@@ -285,7 +285,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 127.0, 116.0, 906.0, 19.0 ],
-									"text" : "jcom.message recorder/4/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit/active xyz @dataspace/unit/native xyz",
+									"text" : "jcom.message recorder/4/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit xyz",
 									"varname" : "hue_angle[12]"
 								}
 
@@ -300,7 +300,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 127.0, 140.0, 906.0, 19.0 ],
-									"text" : "jcom.message recorder/3/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit/active xyz @dataspace/unit/native xyz",
+									"text" : "jcom.message recorder/3/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit xyz",
 									"varname" : "hue_angle[13]"
 								}
 
@@ -315,7 +315,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 127.0, 164.0, 906.0, 19.0 ],
-									"text" : "jcom.message recorder/2/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit/active xyz @dataspace/unit/native xyz",
+									"text" : "jcom.message recorder/2/in @repetitions/allow 1 @type array @description \"x y z input position.\" @dataspace position @dataspace/unit xyz",
 									"varname" : "hue_angle[14]"
 								}
 
